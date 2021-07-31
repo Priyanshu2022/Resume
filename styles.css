@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: "Saira Extra Condensed", sans-serif; */
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Indie Flower', cursive; */
+/* font-family: 'Poiret One', cursive; */
+}
+
+.highlight{
+  /* color: #ffd500; */
+  color: #49b7e8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #343a40;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.section-heading{
+  font-size: 2.5rem;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  /* background-color: #f3d129; */
+  background-color: #49b7e8;
+  position: sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+}
+.typewriter{
+  font-size: 3.5rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+header nav ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0.7;
+  letter-spacing: 1.5px;
+}
+
+header nav ul li a:hover {
+  opacity: 1.0;
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 1rem;
+  border-bottom: 1px solid #f3f4f5;
+  padding-top: 5rem;
+}
+.mail{
+  text-transform: lowercase;
+}
+main section#welcome-section h1 div:first-child {
+  padding-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 0.5;
+  padding-bottom: 2rem;
+}
+
+main section#welcome-section .info {
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+main section#welcome-section p {
+  font-size: 1.3rem;
+  margin: 4rem 0 4rem 0;
+}
+main section#welcome-section .contacts{
+  align-items: center;
+}
+main section#welcome-section .contacts a {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(49, 23, 23);
+
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+main section#welcome-section .contacts a i{
+  margin-top: 1.5rem;
+  margin-left: 1.3rem;
+  align-items: center;
+}
+
+main section#welcome-section .contacts a:hover {
+  /* color: #f1d43b; */
+  color: #49b7e8;
+  transform: scale(1.1);
+}
+
+main section.acheive {
+  padding-top: 5rem;
+}
+
+main section.acheive .experience {
+  margin-bottom: 2.5rem;
+  padding-top: 2rem;
+}
+
+main section.acheive .experience h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+main section.acheive .experience h3 {
+  font-size: 1.5rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+main section.acheive .experience div {
+  /* color: #ffd500; */
+  color: #49b7e8;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  left: 0;
+}
+
+main section.acheive .experience p {
+  font-size: 1.3rem;
+}
+
+main section#skills {
+  padding-top: 5rem;
+}
+
+main section#skills h2 {
+  font-size: 2rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+main section#skills .icons {
+  margin: 1rem 0 2rem 0;
+}
+
+i {
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.fa-html5:hover {
+  color: #e9633c;
+}
+
+.fa-css3-alt:hover {
+  color: #2862e9;
+}
+
+.fa-js:hover {
+  color: #f1d43b;
+}
+
+.fa-react:hover {
+  color: #49b7e8;
+}
+
+.fa-bootstrap:hover {
+  color: #533b78;
+}
+.fa-cuttlefish:hover{
+  color: #77c4e6;
+}
+
+main section#skills ul {
+  list-style: square;
+}
+
+main section#skills ul li {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media screen and (max-width: 665px) {
+
+  .ico{
+    padding-top: 0;
+  }
+  .typewriter{
+    font-size: 3.5rem;
+  }
+  .section-heading{
+    font-size: 2.5rem;
+  }
+  header{
+    height: 65px;
+  }
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+  } 
+  .checkbtn{
+    display: block;
+    
+  }
+  .books{
+    padding-bottom: 5px;
+  }
+  .fa-bars{
+    font-size: 2rem;
+    top: 0;
+    padding-top: 0;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    /* background: #f1d43b; */
+    /* color: #49b7e8; */
+    background: #49b7e8;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: white;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .icons{
+    display: flex;
+    flex-direction: column;
+  }
+  .interestCommon{
+    font-size: 0.4em;
+  }
+  header{
+    padding: 0;
+  }
+  
+}
+
+@media screen and (max-width:1020px)and( min-width:666px){
+  .section-heading{
+    font-size: 2.5rem;
+  }
+  main{
+    margin-top: 200px;
+  }
+  .typewriter{
+    font-size: 3.5rem;
+  }
+  .section-heading{
+    font-size: 2.5rem;
+  }
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .interestCommon{
+    padding-top: 10px;
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .interestCommon{
+    padding-top: 10px;
+    font-size: 0.6em;
+  }
+  body {
+    display: grid;
+    
+        grid-template-columns: auto auto;
+  }
+  header {
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+  }
+  main section#welcome-section h1 div:last-child {
+    color: #343a40;
+    font-size: 5.5rem;
+    padding-bottom: 2rem;
+  }
+  main section .section-heading {
+    font-size: 4rem;
+    color: #343a40;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  header nav {
+    width: 15vw;
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav ul {
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  header nav ul li {
+    margin: 0.6rem 0;
+  }
+  header nav ul li a {
+    font-size: 1.5rem;
+  }
+  main section {
+    padding: 0 3rem;
+  }
+  main section.acheive .experience {
+    display: grid;
+        grid-template-columns: auto auto;
+  }
+  main section.acheive .experience h2 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    line-height: 1;
+  }
+  main section.acheive .experience h3 {
+    grid-column: 1 / span 2;
+    margin-bottom: 0.5rem;
+  }
+  main section.acheive .experience div {
+    grid-column: 2 / span 1;
+
+    grid-row: 1 / span 1;
+  }
+}
+main section#interest {
+  padding-top: 5rem;
+}
+
+main section#interest h2 {
+  font-size: 2rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+main section#interest .icons {
+  margin: 0.5rem 0 2rem 0;
+}
+
+main section#interest .icons i {
+  cursor: pointer;
+  /* margin-right: 1rem; */
+  font-size: 3rem;
+}
+
+main section#interest .icons i.fa-html5:hover {
+  color: #e9633c;
+}
+
+main section#interest .icons i.fa-css3-alt:hover {
+  color: #2862e9;
+}
+
+main section#interest .icons i.fa-js:hover {
+  color: #f1d43b;
+}
+
+main section#interest .icons i.fa-react:hover {
+  color: #49b7e8;
+}
+
+main section#interest .icons i.fa-bootstrap:hover {
+  color: #533b78;
+}
+
+main section#interest ul li {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+.fa-gamepad:hover{
+  color: rgb(153, 147, 147);
+}
+.fa-utensils:hover{
+  color: burlywood;
+}
+.fa-baseball-ball:hover{
+  color: red;
+}
+/* .icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+.interestCommon{
+  padding-top: 10px;
+  font-size: 0.6em;
+} */
+.box{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.box h4{
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+.box .percent{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+  /* padding-bottom: 9px; */
+}
+.percent:hover{
+  transform: scale(1.01);
+}
+.percent div{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* background: #f1d43b; */
+  /* color: #49b7e8; */
+  background: #49b7e8;
+  margin-bottom: 6px;
+} 
+
